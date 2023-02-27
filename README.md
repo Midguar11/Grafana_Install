@@ -32,5 +32,12 @@ lsof -i -P
     apt-get update && sudo apt-get install influxdb
     service influxdb start
     systemctl status influxdb
-    
+# Other option / Install Grafana with Prometheus to Docker
+
+use dockerfile
+
+docker-compose up -d
+
+
+
     
