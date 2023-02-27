@@ -12,13 +12,15 @@
     sudo apt-get install -y adduser libfontconfig1
     wget https://dl.grafana.com/enterprise/release/grafana-enterprise_8.5.4_amd64.deb
     sudo dpkg -i grafana-enterprise_8.5.4_amd64.deb
-
+    
+```
     systemctl daemon-reload
     systemctl start grafana-server
     systemctl status grafana-server
     systemctl enable grafana-server.service
     lsof -i -P
-
+    
+    ```
 # Cheking and setup
 
 - open browser serverip:3000
@@ -33,3 +35,5 @@
     apt-get update && sudo apt-get install influxdb
     service influxdb start
     systemctl status influxdb
+    
+    
